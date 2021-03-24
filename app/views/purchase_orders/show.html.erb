@@ -1,0 +1,114 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Order num:</strong>
+  <%= @purchase_order.order_num %>
+</p>
+
+<p>
+  <strong>Purchase date:</strong>
+  <%= @purchase_order.purchase_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @purchase_order.status %>
+</p>
+
+<p>
+  <strong>Sales channel:</strong>
+  <%= @purchase_order.sales_channel %>
+</p>
+
+<p>
+  <strong>Order total:</strong>
+  <%= @purchase_order.order_total %>
+</p>
+
+<p>
+  <strong>Num items shipped:</strong>
+  <%= @purchase_order.num_items_shipped %>
+</p>
+
+<p>
+  <strong>Num items unshipped:</strong>
+  <%= @purchase_order.num_items_unshipped %>
+</p>
+
+<p>
+  <strong>Payment method:</strong>
+  <%= @purchase_order.payment_method %>
+</p>
+
+<p>
+  <strong>Shipped at:</strong>
+  <%= @purchase_order.shipped_at %>
+</p>
+
+<p>
+  <strong>Shipping price:</strong>
+  <%= @purchase_order.shipping_price %>
+</p>
+
+<p>
+  <strong>Shipping tax:</strong>
+  <%= @purchase_order.shipping_tax %>
+</p>
+
+<p>
+  <strong>Carrier:</strong>
+  <%= @purchase_order.carrier %>
+</p>
+
+<p>
+  <strong>Tracking number:</strong>
+  <%= @purchase_order.tracking_number %>
+</p>
+
+<p>
+  <strong>Estimated arrival date:</strong>
+  <%= @purchase_order.estimated_arrival_date %>
+</p>
+
+<p>
+  <strong>Fulfillment center:</strong>
+  <%= @purchase_order.fulfillment_center %>
+</p>
+
+<p>
+  <strong>Confirmed at:</strong>
+  <%= @purchase_order.confirmed_at %>
+</p>
+
+<p>
+  <strong>Returned date:</strong>
+  <%= @purchase_order.returned_date %>
+</p>
+
+<p>
+  <strong>Return reason:</strong>
+  <%= @purchase_order.return_reason %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @purchase_order.notes %>
+</p>
+
+<p>
+  <strong>Refunded at:</strong>
+  <%= @purchase_order.refunded_at %>
+</p>
+
+<p>
+  <strong>Ship to name:</strong>
+  <%= @purchase_order.ship_to_name %>
+</p>
+
+<p>
+  <strong>Ship to address:</strong>
+  <%= @purchase_order.ship_to_address %>
+</p>
+
+<%= link_to 'Edit', edit_purchase_order_path(@purchase_order) %> |
+<%= link_to 'Back', purchase_orders_path %>

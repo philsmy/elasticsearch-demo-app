@@ -1,0 +1,2 @@
+json.extract! purchase_order, :id, :order_num, :purchase_date, :status, :sales_channel, :order_total, :num_items_shipped, :num_items_unshipped, :payment_method, :shipped_at, :shipping_price, :shipping_tax, :carrier, :tracking_number, :estimated_arrival_date, :fulfillment_center, :confirmed_at, :returned_date, :return_reason, :notes, :refunded_at, :ship_to_name, :ship_to_address, :created_at, :updated_at
+json.url purchase_order_url(purchase_order, format: :json)

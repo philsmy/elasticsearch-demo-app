@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Purchase Orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Order num</th>
+      <th>Purchase date</th>
+      <th>Status</th>
+      <th>Sales channel</th>
+      <th>Order total</th>
+      <th>Num items shipped</th>
+      <th>Num items unshipped</th>
+      <th>Payment method</th>
+      <th>Shipped at</th>
+      <th>Shipping price</th>
+      <th>Shipping tax</th>
+      <th>Carrier</th>
+      <th>Tracking number</th>
+      <th>Estimated arrival date</th>
+      <th>Fulfillment center</th>
+      <th>Confirmed at</th>
+      <th>Returned date</th>
+      <th>Return reason</th>
+      <th>Notes</th>
+      <th>Refunded at</th>
+      <th>Ship to name</th>
+      <th>Ship to address</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @purchase_orders.each do |purchase_order| %>
+      <tr>
+        <td><%= purchase_order.order_num %></td>
+        <td><%= purchase_order.purchase_date %></td>
+        <td><%= purchase_order.status %></td>
+        <td><%= purchase_order.sales_channel %></td>
+        <td><%= purchase_order.order_total %></td>
+        <td><%= purchase_order.num_items_shipped %></td>
+        <td><%= purchase_order.num_items_unshipped %></td>
+        <td><%= purchase_order.payment_method %></td>
+        <td><%= purchase_order.shipped_at %></td>
+        <td><%= purchase_order.shipping_price %></td>
+        <td><%= purchase_order.shipping_tax %></td>
+        <td><%= purchase_order.carrier %></td>
+        <td><%= purchase_order.tracking_number %></td>
+        <td><%= purchase_order.estimated_arrival_date %></td>
+        <td><%= purchase_order.fulfillment_center %></td>
+        <td><%= purchase_order.confirmed_at %></td>
+        <td><%= purchase_order.returned_date %></td>
+        <td><%= purchase_order.return_reason %></td>
+        <td><%= purchase_order.notes %></td>
+        <td><%= purchase_order.refunded_at %></td>
+        <td><%= purchase_order.ship_to_name %></td>
+        <td><%= purchase_order.ship_to_address %></td>
+        <td><%= link_to 'Show', purchase_order %></td>
+        <td><%= link_to 'Edit', edit_purchase_order_path(purchase_order) %></td>
+        <td><%= link_to 'Destroy', purchase_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Purchase Order', new_purchase_order_path %>

@@ -1,0 +1,49 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_num: MyString
+  purchase_date: 2021-03-24 14:48:52
+  status: MyString
+  sales_channel: MyString
+  order_total: 1.5
+  num_items_shipped: 1
+  num_items_unshipped: 1
+  payment_method: MyString
+  shipped_at: 2021-03-24 14:48:52
+  shipping_price: 1.5
+  shipping_tax: 1.5
+  carrier: MyString
+  tracking_number: MyString
+  estimated_arrival_date: 2021-03-24 14:48:52
+  fulfillment_center: MyString
+  confirmed_at: 2021-03-24 14:48:52
+  returned_date: 2021-03-24 14:48:52
+  return_reason: MyString
+  notes: MyText
+  refunded_at: 2021-03-24 14:48:52
+  ship_to_name: MyString
+  ship_to_address: MyString
+
+two:
+  order_num: MyString
+  purchase_date: 2021-03-24 14:48:52
+  status: MyString
+  sales_channel: MyString
+  order_total: 1.5
+  num_items_shipped: 1
+  num_items_unshipped: 1
+  payment_method: MyString
+  shipped_at: 2021-03-24 14:48:52
+  shipping_price: 1.5
+  shipping_tax: 1.5
+  carrier: MyString
+  tracking_number: MyString
+  estimated_arrival_date: 2021-03-24 14:48:52
+  fulfillment_center: MyString
+  confirmed_at: 2021-03-24 14:48:52
+  returned_date: 2021-03-24 14:48:52
+  return_reason: MyString
+  notes: MyText
+  refunded_at: 2021-03-24 14:48:52
+  ship_to_name: MyString
+  ship_to_address: MyString

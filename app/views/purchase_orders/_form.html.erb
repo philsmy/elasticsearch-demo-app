@@ -1,0 +1,127 @@
+<%= form_with(model: purchase_order) do |form| %>
+  <% if purchase_order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(purchase_order.errors.count, "error") %> prohibited this purchase_order from being saved:</h2>
+
+      <ul>
+        <% purchase_order.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :order_num %>
+    <%= form.text_field :order_num %>
+  </div>
+
+  <div class="field">
+    <%= form.label :purchase_date %>
+    <%= form.datetime_select :purchase_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sales_channel %>
+    <%= form.text_field :sales_channel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :order_total %>
+    <%= form.text_field :order_total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :num_items_shipped %>
+    <%= form.number_field :num_items_shipped %>
+  </div>
+
+  <div class="field">
+    <%= form.label :num_items_unshipped %>
+    <%= form.number_field :num_items_unshipped %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_method %>
+    <%= form.text_field :payment_method %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shipped_at %>
+    <%= form.datetime_select :shipped_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shipping_price %>
+    <%= form.text_field :shipping_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shipping_tax %>
+    <%= form.text_field :shipping_tax %>
+  </div>
+
+  <div class="field">
+    <%= form.label :carrier %>
+    <%= form.text_field :carrier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tracking_number %>
+    <%= form.text_field :tracking_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estimated_arrival_date %>
+    <%= form.datetime_select :estimated_arrival_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fulfillment_center %>
+    <%= form.text_field :fulfillment_center %>
+  </div>
+
+  <div class="field">
+    <%= form.label :confirmed_at %>
+    <%= form.datetime_select :confirmed_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :returned_date %>
+    <%= form.datetime_select :returned_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :return_reason %>
+    <%= form.text_field :return_reason %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notes %>
+    <%= form.text_area :notes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :refunded_at %>
+    <%= form.datetime_select :refunded_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ship_to_name %>
+    <%= form.text_field :ship_to_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ship_to_address %>
+    <%= form.text_field :ship_to_address %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
